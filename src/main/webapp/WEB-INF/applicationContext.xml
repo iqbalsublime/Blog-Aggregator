@@ -47,5 +47,7 @@
 	<jpa:repositories base-package="com.sublime.repository" />
 	
 	<task:annotation-driven />
+	
+	<import resource="security.xml"/>
 
 </beans>
