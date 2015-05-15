@@ -68,9 +68,9 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\"></script>\r\n");
       out.write("\r\n");
+      out.write("<script src=\"http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js\"></script>\r\n");
       out.write("\r\n");
       out.write("<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\r\n");
-      out.write("\r\n");
       out.write("\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("<title>");
@@ -350,7 +350,7 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_security_authorize_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       out.write("\r\n");
       out.write("\t\t\t\t\t<li  class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'users' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'account' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\"><a href='");
       if (_jspx_meth_spring_url_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_security_authorize_1, _jspx_page_context))
         return true;

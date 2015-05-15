@@ -8,10 +8,7 @@
 <label>ID:</label> <h5>${user.id}</h5>
 <label>Password:</label> <h5>${user.password}</h5>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal">
-  New Blog
-</button>
+
 
 <br/> <br/>
 
@@ -23,6 +20,8 @@ $(document).ready(function() {
 		$("#modalRemove .removeBtn").attr("href", $(this).attr("href"));
 		$("#modalRemove").modal();
 	});
+	
+	
 });
 </script>
 
@@ -64,38 +63,6 @@ $(document).ready(function() {
 
 
 
-<form:form commandName="blog" cssClass="form-horizontal">
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add New Blog</h4>
-      </div>
-      <div class="modal-body">
-        	<div class="form-group">
-				<label for="name" class="col-sm-2 control-label">Blog Name:</label>
-				<div class="col-sm-10">
-					<form:input path="name" cssClass="form-control"/>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="url" class="col-sm-2 control-label">URL:</label>
-				<div class="col-sm-10">
-					<form:input path="url" cssClass="form-control"/>
-				</div>
-			</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <input type="submit" value="Save" class="btn btn-success">
-      </div>
-    </div>
-  </div>
-</div>
-</form:form>
-<br/>
 
 <!-- Modal -->
 <div class="modal fade" id="modalRemove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

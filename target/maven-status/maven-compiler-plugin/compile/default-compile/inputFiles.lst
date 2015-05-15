@@ -8,7 +8,9 @@ C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\repository\ItemRepos
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\entity\Blog.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\controller\UserController.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\entity\Item.java
+C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\controller\RegisterController.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\controller\IndexController.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\entity\User.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\service\BlogService.java
 C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\controller\LoginController.java
+C:\Users\Iqbal\projects\Test-Blog\src\main\java\com\sublime\controller\AdminController.java
