@@ -131,6 +131,25 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("<br/>\r\n");
       out.write("\r\n");
+      out.write("<!-- Modal -->\r\n");
+      out.write("<div class=\"modal fade\" id=\"modalRemove\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\r\n");
+      out.write("  <div class=\"modal-dialog\">\r\n");
+      out.write("    <div class=\"modal-content\">\r\n");
+      out.write("      <div class=\"modal-header\">\r\n");
+      out.write("        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\r\n");
+      out.write("        <h4 class=\"modal-title\" id=\"myModalLabel\">Remove Blog</h4>\r\n");
+      out.write("      </div>\r\n");
+      out.write("      <div class=\"modal-body\">\r\n");
+      out.write("        Really want to remove blog ?\r\n");
+      out.write("      </div>\r\n");
+      out.write("      <div class=\"modal-footer\">\r\n");
+      out.write("        <button type=\"button\" class=\"btn btn-info\" data-dismiss=\"modal\">Cancel</button>\r\n");
+      out.write("        <a href=\"\" class=\"btn btn-danger btn-sm removeBtn\">Remove</a>\r\n");
+      out.write("      </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("  </div>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t");
@@ -252,7 +271,7 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
           out.write("\t<a href='");
           if (_jspx_meth_spring_url_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_1, _jspx_page_context, _jspx_push_body_count_c_forEach_1))
             return true;
-          out.write("' class=\"btn btn-danger\">Remove Blog</a>\r\n");
+          out.write("' class=\"btn btn-danger triggerRemove\">Remove Blog</a>\r\n");
           out.write("\t");
           if (_jspx_meth_c_out_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_1, _jspx_page_context, _jspx_push_body_count_c_forEach_1))
             return true;

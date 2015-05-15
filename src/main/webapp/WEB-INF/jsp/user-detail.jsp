@@ -39,7 +39,7 @@ $(document).ready(function() {
   <div class="tab-pane" id="blog_${blog.id}">
 	<h1><c:out value="${blog.name}" /></h1>
 	<p>
-	<a href='<spring:url value="/blog/remove/${blog.id}.html" />' class="btn btn-danger">Remove Blog</a>
+	<a href='<spring:url value="/blog/remove/${blog.id}.html" />' class="btn btn-danger triggerRemove">Remove Blog</a>
 	<c:out value="${blog.url}" /></p>
 
 	<table class="table table-bordered table-hover table-striped">
@@ -96,6 +96,25 @@ $(document).ready(function() {
 </div>
 </form:form>
 <br/>
+
+<!-- Modal -->
+<div class="modal fade" id="modalRemove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Remove Blog</h4>
+      </div>
+      <div class="modal-body">
+        Really want to remove blog ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        <a href="" class="btn btn-danger btn-sm removeBtn">Remove</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
