@@ -14,20 +14,20 @@
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-<!-- 
+
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"	destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/blog" />
 		<property name="username" value="root" />
 		<property name="password" value="" />
-	</bean> -->
+	</bean> 
 	
-	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"	destroy-method="close">
+	<!-- <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"	destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_ PORT}/blog" />
 		<property name="username" value="adminkWTpEm8" />
 		<property name="password" value="_FEFVgcTp8e9" />
-	</bean>
+	</bean> -->
 
 	<bean id="emf"	class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="packagesToScan" value="com.sublime.entity" />

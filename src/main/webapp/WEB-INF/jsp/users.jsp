@@ -7,7 +7,7 @@
 		<tr>
 			<th>ID</th>
 			<th>User Name</th>
-			<th>Password</th>
+			<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15,7 +15,7 @@
 			<tr>
 				<td> <a href='<spring:url value="/users/${user.id}.html"></spring:url>'>${user.name}</a></td>
 				<td>${user.id}</td>
-				<td>${user.password}</td>
+				<td> <a href='<spring:url value="/user/remove/${user.id}.html"></spring:url>' class="btn btn-danger">Remove User</a></td>
 			</tr>
 		</c:forEach>
 	</tbody>
