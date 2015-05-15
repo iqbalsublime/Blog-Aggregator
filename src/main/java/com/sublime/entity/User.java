@@ -15,6 +15,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
+import com.sublime.annotation.UniqueUsername;
+
 
 
 @Entity
@@ -26,6 +28,7 @@ public class User {
 	
 	@Size(min=3, message = "Name must be at lease 3 characters !" )
 	@Column(unique = true)
+	@UniqueUsername(message = "Such a username already exists!")
 	private String name;
 	
 	@Size(min=3, message = "Invalid email address!")
