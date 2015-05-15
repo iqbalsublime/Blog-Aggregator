@@ -3,6 +3,7 @@ package com.sublime.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -24,6 +25,7 @@ public class User {
 	private Integer id;
 	
 	@Size(min=3, message = "Name must be at lease 3 characters !" )
+	@Column(unique = true)
 	private String name;
 	
 	@Size(min=3, message = "Invalid email address!")
