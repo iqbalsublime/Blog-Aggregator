@@ -82,6 +82,11 @@ $(document).ready(function() {
 			},
 			unhighlight: function(element) {
 				$(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+			},
+			messages: {
+				name: {
+					remote: "Such username already exists!"
+				}
 			}
 		}
 	);

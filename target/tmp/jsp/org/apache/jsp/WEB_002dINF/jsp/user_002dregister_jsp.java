@@ -258,6 +258,11 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\t\t\t},\r\n");
       out.write("\t\t\tunhighlight: function(element) {\r\n");
       out.write("\t\t\t\t$(element).closest('.form-group').removeClass('has-error').addClass('has-success');\r\n");
+      out.write("\t\t\t},\r\n");
+      out.write("\t\t\tmessages: {\r\n");
+      out.write("\t\t\t\tname: {\r\n");
+      out.write("\t\t\t\t\tremote: \"Such username already exists!\"\r\n");
+      out.write("\t\t\t\t}\r\n");
       out.write("\t\t\t}\r\n");
       out.write("\t\t}\r\n");
       out.write("\t);\r\n");
